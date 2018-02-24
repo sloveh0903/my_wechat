@@ -19,7 +19,7 @@ public class WechatSetting {
 
     //微信接口
     private String access_token_url;
-
+    private String create_menu_url;
 
     public String getAppId() {
         return appId;
@@ -51,5 +51,13 @@ public class WechatSetting {
 
     public void setAccess_token_url(String access_token_url) {
         this.access_token_url = access_token_url;
+    }
+
+    public String getCreate_menu_url() {
+        return create_menu_url;
+    }
+
+    public void setCreate_menu_url(String create_menu_url) {
+        this.create_menu_url = create_menu_url;
     }
 }

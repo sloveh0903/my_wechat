@@ -1,8 +1,6 @@
 package cn.sun.my_wechat;
 
-import cn.sun.my_wechat.service.WeChatService;
-import cn.sun.my_wechat.service.impl.WechatIntelServiceImpl;
-import cn.sun.my_wechat.service.impl.WechatServiceImpl;
+import cn.sun.my_wechat.service.WechatIntelService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 public class MyWechatApplicationTests {
 
 	@Autowired
-	private WechatIntelServiceImpl wechatIntelService;
+	private WechatIntelService wechatIntelService;
 
 	@Test
 	public void contextLoads() {

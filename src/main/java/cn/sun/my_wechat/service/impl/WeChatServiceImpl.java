@@ -1,7 +1,7 @@
-package cn.sun.my_wechat.service;
+package cn.sun.my_wechat.service.impl;
 
 import cn.sun.my_wechat.domain.resp.TextMessage;
-import cn.sun.my_wechat.service.impl.WechatServiceImpl;
+import cn.sun.my_wechat.service.WechatService;
 import cn.sun.my_wechat.util.MessageUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,9 +14,9 @@ import java.util.Map;
  * 微信接口调用
  */
 @Service
-public class WeChatService implements WechatServiceImpl {
+public class WeChatServiceImpl implements WechatService {
 
-    private static final Logger logger = LoggerFactory.getLogger(WeChatService.class);
+    private static final Logger logger = LoggerFactory.getLogger(WeChatServiceImpl.class);
 
     @Override
     public String processRequest(String request) throws Exception {

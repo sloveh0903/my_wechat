@@ -1,7 +1,7 @@
 package cn.sun.my_wechat.controller;
 
         import cn.sun.my_wechat.common.WechatSetting;
-        import cn.sun.my_wechat.service.impl.WechatServiceImpl;
+        import cn.sun.my_wechat.service.WechatService;
         import cn.sun.my_wechat.util.SignaUtils;
         import org.springframework.beans.factory.annotation.Autowired;
         import org.springframework.web.bind.annotation.*;
@@ -19,7 +19,7 @@ public class JoinUpController {
     @Autowired
     private WechatSetting wechatSetting;
     @Autowired
-    private WechatServiceImpl wechatServiceImpl;
+    private WechatService wechatServiceImpl;
 
     /**
      * 接入微信
